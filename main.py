@@ -15,6 +15,18 @@ unoReverse = ''.join(reversed(getInput))
 
 print(unoReverse)
 
+#Part B by Ben Gubbins
+num = int(input('Enter a number: '))#get number input
+prime = 1#variable to track whether prime
+for x in range(2,num):#iterate through all numbers less than or equal to the given number
+    if num%x==0: #check if the current value of x is a divisor of the given number
+        prime = 0
+if prime:#print if the number is prime or not
+	print(num, "is prime.")
+else:
+	print(num, "is not prime.")
+
+
 ##PART C##
 num12 = str(input("Enter your time in the 12 hour format xxxx: "))
 if len(num12) > 4:
